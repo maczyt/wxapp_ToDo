@@ -4,6 +4,7 @@
 
 ---
 
-### 微信小程序的bug
+### 微信小程序的小问题
 
 1. placeholder-(style|class) 不起效
+2. 不知道如何使用DOM操作组件
