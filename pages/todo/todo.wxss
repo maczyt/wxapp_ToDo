@@ -96,7 +96,6 @@
   color: #0099cc;
 }
 
-
 .bg1 {
   background: #5C258D; 
   background: -webkit-linear-gradient(to left, #5C258D , #4389A2);

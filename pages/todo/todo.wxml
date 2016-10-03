@@ -13,7 +13,7 @@
           <view class="t-time">{{item.time}}分钟</view>
           <view class="cover" bindlongtap="changeTodo" data-index="{{index}}"></view>
         </view>
-        <button class="t-btn" style="border: none; color: #ffffff;" plain="true">开始</button>
+        <button class="t-btn" style="border: none; color: #ffffff;" plain="true" bindtap="startTodo" data-index="{{index}}">开始</button>
       </view>
     </block>
   </view>

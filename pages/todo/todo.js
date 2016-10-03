@@ -18,7 +18,7 @@ Page({
     naviFlag: false,
 
     todo: [
-      {
+      /*{
         name: '游泳',
         time: 20,
         bgCls: 'bg1'
@@ -32,7 +32,7 @@ Page({
         name: '骑车',
         time: 20,
         bgCls: 'bg5'
-      }
+      }*/
     ],
     defaults: {
       time: [
@@ -40,6 +40,13 @@ Page({
         {value: '25', checked: 'true'},
         {value: '35'}
       ]
+    }
+  },
+  onShow: function () {
+    if (this.data.todo.length < 1) {
+      this.setData({
+        textShow: false
+      })
     }
   },
   /**
@@ -191,5 +198,20 @@ Page({
         url: '/pages/todos/todos'
       })
     }
+  },
+
+  // 开始todo
+  startTodo: function(e) {
+    var index = e.target.dataset.index;
+    var time = ''+this.data.todo[index].time;
+    var name = this.data.todo[index].name;
+    wx.setStorageSync('todoTime', time);
+    wx.setStorageSync('todoName', name)
+    wx.navigateTo({
+      url: '/pages/doing/doing',
+      complete: function() {
+        wx.navigateBack();
+      }
+    })
   }
 })

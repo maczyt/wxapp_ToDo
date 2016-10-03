@@ -1,14 +1,22 @@
 # 微信小程序 ToDoList
 
-**没有完成** *2016/10/01*
+## 开发遇到的问题
 
-暂时的版本 
-
-<img alt="效果图" height="711" width="474" src="images/wxscx.gif" />
+1. 首先就是页面间的跳转问题，*并不知道该用如何以正确姿势来使用*，看了官方文档只发现到导航，并使用了，结果差强人意
+2. 组件的控制，发现没有DOM(可能是我没找到吧)，好多效果都没有实现
+3. 倒计时动画，使用了wx.createAnimation，当然让我很不爽，问题应该出自二
+4. placeholder-(style|class)和按钮的hover-class不起效，估计是姿势不对
 
 ---
 
-### 微信小程序的小问题
+## 暂时的效果图
 
-1. placeholder-(style|class) 不起效
-2. 不知道如何使用DOM操作组件
+<img alt="效果图" height="711" width="474" src="images/wxxcx.gif" />
+
+---
+
+## 学习资料
+
+1. [官方文档](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+2. [设计指南](https://mp.weixin.qq.com/debug/wxadoc/design/index.html)
+3. [开发工具](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1474644089359)
